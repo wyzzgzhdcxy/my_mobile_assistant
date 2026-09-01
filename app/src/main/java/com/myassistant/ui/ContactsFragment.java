@@ -1,4 +1,4 @@
-package com.example.testan.ui;
+package com.myassistant.ui;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.testan.R;
+import com.myassistant.R;
 
 public class ContactsFragment extends Fragment {
 

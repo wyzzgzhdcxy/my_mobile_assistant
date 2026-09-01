@@ -5,7 +5,7 @@ set "SDK=%LOCALAPPDATA%\Android\Sdk"
 set "ADB=%SDK%\platform-tools\adb.exe"
 set "EMULATOR=%SDK%\emulator\emulator.exe"
 set "GRADLE=E:\application\java\gradle-9.4.1\bin\gradle.bat"
-set "PKG=com.example.testan"
+set "PKG=com.myassistant"
 set "ACTIVITY=%PKG%/.MainActivity"
 set "TMP=%TEMP%\avd_list_%RANDOM%.txt"
 

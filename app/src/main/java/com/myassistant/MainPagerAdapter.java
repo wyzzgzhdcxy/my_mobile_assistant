@@ -1,4 +1,4 @@
-package com.example.testan;
+package com.myassistant;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace 'com.example.testan'
+    namespace 'com.myassistant'
     compileSdk 35
 
     def buildTimestamp = (System.currentTimeMillis() / 1000).toInteger()
 
     defaultConfig {
-        applicationId "com.example.testan"
+        applicationId "com.myassistant"
         minSdk 24
         targetSdk 35
         versionCode buildTimestamp

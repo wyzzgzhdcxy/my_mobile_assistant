@@ -12,10 +12,10 @@
 # Default Android optimize.txt covers most cases.
 
 # Keep MainActivity (referenced from AndroidManifest by name)
--keep class com.example.testan.MainActivity { *; }
+-keep class com.myassistant.MainActivity { *; }
 
 # Keep custom Fragment subclasses (referenced by name via FragmentStateAdapter)
--keep class com.example.testan.ui.** extends androidx.fragment.app.Fragment { *; }
+-keep class com.myassistant.ui.** extends androidx.fragment.app.Fragment { *; }
 
 # Suppress warnings for known harmless notes
 -dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">test_an</string>
+    <string name="app_name">my_mobile_assistant</string>
     <string name="tab_weixin">Java</string>
     <string name="tab_baidu">面试题</string>
     <string name="tab_explore">支付</string>

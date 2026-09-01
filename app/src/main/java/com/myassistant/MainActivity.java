@@ -1,4 +1,4 @@
-package com.example.testan;
+package com.myassistant;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -8,10 +8,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
-import com.example.testan.ui.BaiduFragment;
-import com.example.testan.ui.DiscoverFragment;
-import com.example.testan.ui.MeFragment;
-import com.example.testan.ui.WeixinFragment;
+import com.myassistant.ui.BaiduFragment;
+import com.myassistant.ui.DiscoverFragment;
+import com.myassistant.ui.MeFragment;
+import com.myassistant.ui.WeixinFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
