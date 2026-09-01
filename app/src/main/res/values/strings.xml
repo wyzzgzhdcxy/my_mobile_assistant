@@ -2,7 +2,6 @@
     <string name="app_name">my_mobile_assistant</string>
     <string name="tab_weixin">Java</string>
     <string name="tab_baidu">面试题</string>
-    <string name="tab_novel">小说</string>
     <string name="tab_explore">支付</string>
     <string name="tab_me">我</string>
 </resources>

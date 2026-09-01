@@ -10,7 +10,6 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.myassistant.ui.BaiduFragment;
 import com.myassistant.ui.DiscoverFragment;
-import com.myassistant.ui.NovelFragment;
 import com.myassistant.ui.MeFragment;
 import com.myassistant.ui.WeixinFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -40,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         MainPagerAdapter adapter = new MainPagerAdapter(this);
         adapter.addFragment(new WeixinFragment());
         adapter.addFragment(new BaiduFragment());
-        adapter.addFragment(new NovelFragment());
         adapter.addFragment(new DiscoverFragment());
         adapter.addFragment(new MeFragment());
         viewPager.setAdapter(adapter);
@@ -71,9 +69,8 @@ public class MainActivity extends AppCompatActivity {
     private int getPositionById(int itemId) {
         if (itemId == R.id.nav_weixin) return 0;
         if (itemId == R.id.nav_baidu) return 1;
-        if (itemId == R.id.nav_novel) return 2;
-        if (itemId == R.id.nav_explore) return 3;
-        if (itemId == R.id.nav_me) return 4;
+        if (itemId == R.id.nav_explore) return 2;
+        if (itemId == R.id.nav_me) return 3;
         return -1;
     }
 }
