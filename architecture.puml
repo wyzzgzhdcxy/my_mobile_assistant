@@ -1,0 +1,83 @@
+@startuml test_an_architecture
+
+skinparam classAttributeIconSize 0
+skinparam monochrome false
+
+title test_an 架构图
+
+package "app" {
+    class MainActivity {
+        - viewPager : ViewPager2
+        - bottomNav : BottomNavigationView
+        + onCreate()
+        - getPositionById(itemId: int) : int
+    }
+
+    class MainPagerAdapter {
+        - fragments : List<Fragment>
+        + addFragment(fragment: Fragment)
+        + createFragment(position: int) : Fragment
+        + getItemCount() : int
+    }
+
+    abstract class Fragment {
+        + onCreateView()
+        + onViewCreated()
+        + onDestroyView()
+    }
+
+    class WeixinFragment {
+        - webView : WebView
+        + onViewCreated()
+    }
+
+    class BaiduFragment {
+        - webView : WebView
+        + onViewCreated()
+    }
+
+    class DiscoverFragment
+    class MeFragment
+}
+
+package "res/layout" {
+    class activity_main
+    class fragment_weixin
+    class fragment_baidu
+    class fragment_placeholder
+}
+
+package "res/menu" {
+    class bottom_nav_menu
+}
+
+MainActivity --> MainPagerAdapter : uses
+MainActivity --> bottom_nav_menu : binds
+MainPagerAdapter --> Fragment : holds list of
+MainActivity ..> WeixinFragment : creates
+MainActivity ..> BaiduFragment : creates
+MainActivity ..> DiscoverFragment : creates
+MainActivity ..> MeFragment : creates
+
+WeixinFragment --|> Fragment
+BaiduFragment --|> Fragment
+DiscoverFragment --|> Fragment
+MeFragment --|> Fragment
+
+MainActivity --> activity_main : setContentView
+WeixinFragment --> fragment_weixin : inflate
+BaiduFragment --> fragment_baidu : inflate
+DiscoverFragment --> fragment_placeholder : inflate
+MeFragment --> fragment_placeholder : inflate
+
+note right of WeixinFragment
+  WebView 加载
+  https://www.tencent.com/
+end note
+
+note right of BaiduFragment
+  WebView 加载
+  https://www.baidu.com/
+end note
+
+@enduml
