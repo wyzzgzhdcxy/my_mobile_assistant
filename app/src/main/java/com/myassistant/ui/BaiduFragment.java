@@ -50,7 +50,7 @@ public class BaiduFragment extends Fragment {
             }
         });
 
-        webView.loadUrl("http://111.229.201.94/00-index.html");
+        webView.loadUrl("http://111.229.201.94/my_document/%E9%9D%A2%E8%AF%95%E9%A2%98%E5%BA%93/00-index.html");
     }
 
     @Override

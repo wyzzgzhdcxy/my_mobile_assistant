@@ -50,7 +50,7 @@ public class DiscoverFragment extends Fragment {
             }
         });
 
-        webView.loadUrl("http://111.229.201.94/%E7%AC%AC%E4%B8%89%E6%96%B9%E6%94%AF%E4%BB%98%E6%B5%81%E7%A8%8B%E5%9B%BE/");
+        webView.loadUrl("http://111.229.201.94/my_document/%E7%AC%AC%E4%B8%89%E6%96%B9%E6%94%AF%E4%BB%98%E6%B5%81%E7%A8%8B%E5%9B%BE/");
     }
 
     @Override

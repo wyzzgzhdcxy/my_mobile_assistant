@@ -50,7 +50,7 @@ public class WeixinFragment extends Fragment {
             }
         });
 
-        webView.loadUrl("http://111.229.201.94/Java%E7%89%88%E6%9C%AC%E5%8A%9F%E8%83%BD%E7%82%B9/");
+        webView.loadUrl("http://111.229.201.94/my_document/Java%E7%89%88%E6%9C%AC%E5%8A%9F%E8%83%BD%E7%82%B9/");
     }
 
     @Override
